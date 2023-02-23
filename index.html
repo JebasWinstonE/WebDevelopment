@@ -4,29 +4,133 @@
 <head>
     <title>Hello</title>
     <meta charset="UTF-8">
+
+    <!-- External Font Family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Labrada:ital@1&display=swap');
+    </style>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <section>
-        <h1>Jebas Winston E</h1>
-        <p>💻 <em>Intern at <strong>Veryx Technologies Pvt. Ltd </strong></em></p>
-    </section>
-    <hr>
-    <section>
-        <h3>Interests:</h3>
-        <ul>
-            <li>Football ⚽</li>
-            <li>Nature 🌳</li>
-        </ul>
-    </section>
-    <section>
-        <h3>Hobbies:</h3>
-        <ol>
-            <li>Listening Music 🎶</li>
-            <li>Photography 📸</li>
-        </ol>
-    </section>
-    <hr>
+    <!-- Contents -->
+    <div class="contents">
+        <!-- Header Section -->
+        <section align="center">
+            <img src="./img/portofolio-removebg.png" alt="portofolio">
+        </section>
+        <section>
+            <!-- Marquee -> Used to make the text move along different directions -->
+            <marquee direction="right">Personal Bio </marquee>
+            <!-- Sticky positioning doesn't work in heading and p tags inside a section doesn't work -->
+            <!-- Elements with sticky positioning inside a section will not overflow to the next section -->
+            <h1>Jebas Winston E</h1>
+            <!-- Title -> Used to provide Tool Tip -->
+            <p title="Bio">💻 <em>Intern at <strong>Veryx Technologies Pvt. Ltd </strong></em></p>
+        </section>
+        <section>
+            <h3>Interests:</h3>
+            <ul>
+                <li>Football ⚽</li>
+                <li>Nature 🌳</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Hobbies:</h3>
+            <ol>
+                <li title="music">Listening Music 🎶</li>
+                <!-- Content Editable -> Used to alter contents in the Web Page -->
+                <li contenteditable="true">Photography 📸</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Social Medias:</h3>
+            <ol>
+                <!-- Download -> Used to make downloadable link or button -->
+                <li><a href="./img/portofolio.jpeg" download="logo.jpeg"><button>LinkedIn</button></a>
+                </li>
+                <li><a href="https:\\www.github.com\JebasWinston1"><button>GitHub</button></a></li>
+            </ol>
+        </section>
+        <section style="background-color: aquamarine;" id="bio">
+            <h1>Biography</h1>
+            <div class="bio">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti tempore odio et itaque at
+                    repudiandae consectetur sunt dolor nulla, aut excepturi eaque a ex quo, esse incidunt laboriosam.
+                    Dolor!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem quaerat excepturi
+                    laborum
+                    rerum minus omnis ducimus voluptatibus facilis. Explicabo soluta velit qui optio voluptates tenetur.
+                    Blanditiis dolore minus reiciendis?</p>
+            </div>
+            <h1>Favorites</h1>
+            <div style="overflow-x: auto;">
+                <table border="2">
+                    <thead>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Hello</th>
+                        <th>World</th>
+                        <th>Hello</th>
+                        <th>World</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Football</td>
+                            <td>Favorite Sport</td>
+                            <td>Hello</td>
+                            <td>World</td>
+                            <td>Hello</td>
+                            <td>World</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bayern Munich</td>
+                            <td>Favorite Club</td>
+                            <td>Hello</td>
+                            <td>World</td>
+                            <td>Hello</td>
+                            <td>World</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Curd Rice</td>
+                            <td>Favorite Dish</td>
+                            <td>Hello</td>
+                            <td>World</td>
+                            <td>Hello</td>
+                            <td>World</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- <div class="relative">
+            <p>This is relative</p>
+            <div class="absolute">
+                <p>This is absolute</p>
+            </div>
+        </div> -->
+        <div class="float-sample">
+            <p>Float Sample</p>
+            <div class="nav">Nav Bar</div>
+            <div class="menu">Menu</div>
+            <div class="content">Content</div>
+            <div class="sidebar">Side Bar</div>
+            <div class="footer">Footer</div>
+        </div>
+        <section class="fixed">
+            <p>This is footer</p>
+        </section>
+        <!-- <section style=" background-color: black; color: aliceblue;padding: 5px; width: 100%;">Hello</section> -->
+    </div>
+
 
 </body>
 

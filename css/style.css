@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+div.contents {
+    border-style: solid;
+    width: fit-content;
+}
+
+section>p {
+
+    font-size: medium;
+    font-weight: bold;
+}
+
+ul li {
+    /* Color Code Format in CSS -> #RRGGBB */
+    font-family: 'Times New Roman';
+    color: #0000D2;
+
+    /* Display Properties */
+
+    /* Visibility: hidden -> Hide the element but don't remove the space */
+    /* visibility: hidden; */
+
+    /* Display: none -> Hide the element and removes the space */
+    /* display: none; */
+
+    /* Display: inline -> Brings all the elements in a single line */
+    display: inline;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: 'Labrada'
+}
+
+.contents {
+    /* Background Image Properties */
+    /* Always use background color if background is present */
+    background-image: url("./img/background.jpeg");
+    background-color: aquamarine;
+    /* This will blend the background image with the background color */
+    /* background-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a button {
+    /* Padding -> Space above the Content */
+    /* Short Hand: padding: top right bottom left / padding: (top & bottom) (right & left) */
+    padding: 5px;
+
+    /* Border -> Space above the Padding */
+    border-top: dashed;
+    border-bottom: dashed;
+    border-left: solid;
+    border-right: solid;
+    border-radius: 10px;
+    border-color: #f19106;
+    background-color: #ffe269;
+    height: 40px;
+    width: 120px;
+
+    /* Margin -> Space above the Border */
+    margin: 5px;
+}
+
+/* HR Tag Styling */
+hr {
+    width: 5%;
+    border-top-color: rebeccapurple;
+    border-width: 30%;
+    border-style: dotted;
+}
+
+section:not(#bio) {
+    padding-left: 20px;
+}
+
+a button:hover {
+    background-color: #727272;
+    color: #ffff;
+}
+
+/* Height and width -> Default values = auto */
+.bio {
+    outline: solid #0000D2;
+    border: solid red;
+    padding: 5px 10px;
+    height: auto;
+    background-color: rgb(49, 168, 128);
+    margin: 40px;
+
+
+    /* Text Formatting */
+    text-align: justify;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    word-spacing: 0.1px;
+    text-indent: 20px;
+    text-decoration: line-through;
+}
+
+#bio {
+    outline: solid #0000D2;
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    padding: 10px;
+    background-color: #2B3467;
+    color: #FFFF;
+}
+
+table tr {
+    background-color: #FCFFE7;
+}
+
+table tr:nth-child(odd) {
+    background-color: #BAD7E9;
+}
+
+table tr:hover {
+    background-color: #EB455F;
+}
+
+/* Positioning */
+.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4caf50;
+    border: solid #2e582f;
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+}
+
+.relative {
+    position: relative;
+    background-color: #EB455F;
+    border: solid #e11b39;
+    height: 250px;
+    width: 500px;
+}
+
+.absolute {
+    position: absolute;
+    border: solid lime;
+    width: fit-content;
+    bottom: 0;
+}
+
+/* Float */
+.float-sample {
+    background-color: #FFC6D3;
+    padding: 5px;
+    border: solid #0000D2;
+    text-align: center;
+    margin: 15px;
+    bottom: 0
+}
+
+
+.float-sample div {
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.nav {
+    background-color: #AD8E70;
+}
+
+.menu {
+    float: left;
+    width: 30%;
+    background-color: #FF6E31;
+}
+
+.content {
+    float: left;
+    width: 30%;
+    background-color: #FFEBB7;
+}
+
+.sidebar {
+    background-color: #243763;
+}
+
+.footer {
+    background-color: #227C70;
+}
