@@ -1,0 +1,31 @@
+.tr {
+    margin: 5px;
+    background-color: #ECF2FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tr:nth-child(even) {
+    background-color: #E3DFFD;
+}
+
+.th {
+    margin: 5px;
+    color: #18122B;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.td {
+    margin: 5px;
+    color: black;
+}
+
+div {
+    padding: 5px;
+}
+
+.tr:hover {
+    background-color: #d6d0fd;
+}
